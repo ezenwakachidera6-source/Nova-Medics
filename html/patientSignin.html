@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Patient Signin</title>
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.6.0/fonts/remixicon.css" rel="stylesheet">
+    <link rel="stylesheet" href="/css/Patientssignin.css">
+</head>
+
+<body class="auth-page">
+ 
+    <header class="auth-header">
+        <a href="/html/landingpage.html" class="logo">
+            <span class="logo-icon">
+                <i class="ri-heart-pulse-fill"></i>
+            </span>
+            <span>Nova <strong>Medics</strong></span>
+        </a>
+
+        <a href="/html/Signin.html" class="back-link">
+            <i class="ri-arrow-left-line"></i>
+            Back to sign in options
+        </a>
+    </header>
+
+    <main class="auth-main">
+        <section class="auth-card">
+
+            <div class="auth-icon">
+                <i class="ri-user-heart-line"></i>
+            </div>
+
+            <p class="auth-label">PATIENT PORTAL</p>
+
+            <h1>Welcome back</h1>
+
+            <p class="auth-description">
+                Sign in to access your patient dashboard and manage your appointments.
+            </p>
+
+            <form action="#" method="post">
+
+                <div class="form-group">
+                    <label for="patient-email">Email address</label>
+                    <div class="input-wrapper">
+                        <i class="ri-mail-line"></i>
+                        <input
+                            type="email"
+                            id="patient-email"
+                            name="email"
+                            placeholder="Enter your email address"
+                            autocomplete="email"
+                            required
+                        >
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label for="patient-password">Password</label>
+                    <div class="input-wrapper">
+                        <i class="ri-lock-line"></i>
+                        <input
+                            type="password"
+                            id="patient-password"
+                            name="password"
+                            placeholder="Enter your password"
+                            autocomplete="current-password"
+                            required
+                        >
+                    </div>
+                </div>
+
+                <div class="form-options">
+                    <label class="remember-option">
+                        <input type="checkbox" name="remember">
+                        <span>Remember me</span>
+                    </label>
+
+                    <a href="#" class="text-link">Forgot password?</a>
+                </div>
+
+                <button type="submit" class="auth-button">
+                    <a href="/html/Patientsdashboard.html">Sign In</a>
+                    <i class="ri-arrow-right-line"></i>
+                </button>
+
+            </form>
+
+            <div class="auth-divider">
+                <span>New to Nova Medics?</span>
+            </div>
+
+            <p class="auth-switch">
+                Don't have a patient account?
+                <a href="/html/patientsignup.html">Create account</a>
+            </p>
+
+            <p class="auth-note">
+                <i class="ri-shield-check-line"></i>
+                Your patient account is for managing your personal healthcare information.
+            </p>
+
+        </section>
+    </main>
+
+    <footer class="auth-footer">
+        <p>© 2026 Nova Medics. All rights reserved.</p>
+        <a href="/html/landingpage.html">Return to website</a>
+    </footer>
+
+    
+</body>
+</html>
+
+
+
+
+ 

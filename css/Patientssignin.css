@@ -1,0 +1,453 @@
+
+
+:root {
+    --primary: #1264a3;
+    --primary-dark: #084c7d;
+    --primary-light: #eaf5fc;
+    --teal: #0e9f9a;
+    --navy: #102a43;
+    --heading: #132f4c;
+    --text: #526579;
+    --text-light: #718096;
+    --background: #f7fafc;
+    --white: #ffffff;
+    --border: #e2eaf0;
+    --shadow: 0 1.25rem 3.5rem rgba(16, 42, 67, 0.09);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+
+body {
+    font-family: "DM Sans", sans-serif;
+    color: var(--text);
+    background: var(--background);
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+button,
+input {
+    font: inherit;
+}
+
+.auth-page {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    background:
+        radial-gradient(circle at top left, rgba(18, 100, 163, 0.09), transparent 35%),
+        var(--background);
+}
+
+/* HEADER */
+
+.auth-header {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1rem;
+    padding: 1.5rem 6%;
+    background: rgba(255, 255, 255, 0.9);
+    border-bottom: 0.0625rem solid var(--border);
+}
+
+.logo {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.65rem;
+    color: var(--navy);
+    font-family: "Manrope", sans-serif;
+    font-size: 1.25rem;
+    font-weight: 800;
+}
+
+.logo strong {
+    color: var(--primary);
+}
+
+.logo-icon {
+    width: 2.7rem;
+    height: 2.7rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 0.85rem;
+    color: var(--white);
+    background: var(--primary);
+    font-size: 1.5rem;
+}
+
+.back-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.45rem;
+    color: var(--text);
+    font-size: 0.9rem;
+    font-weight: 600;
+    transition: color 0.25s ease;
+}
+
+.back-link:hover {
+    color: var(--primary);
+}
+
+/* MAIN AREA */
+
+.auth-main {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 3rem 1.25rem;
+}
+
+.auth-card {
+    width: 100%;
+    max-width: 30rem;
+    padding: 2.8rem;
+    background: var(--white);
+    border: 0.0625rem solid var(--border);
+    border-radius: 1.4rem;
+    box-shadow: var(--shadow);
+    animation: auth-appear 0.65s ease both;
+}
+
+.auth-icon {
+    width: 4rem;
+    height: 4rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 1.4rem;
+    border-radius: 1.1rem;
+    color: var(--primary);
+    background: var(--primary-light);
+    font-size: 2rem;
+}
+
+.doctor-icon {
+    color: var(--teal);
+    background: #e8f8f7;
+}
+
+.auth-label {
+    margin-bottom: 0.65rem;
+    color: var(--primary);
+    font-size: 0.75rem;
+    font-weight: 900;
+    letter-spacing: 0.12rem;
+}
+
+.auth-card h1 {
+    margin-bottom: 0.7rem;
+    color: var(--heading);
+    font-family: "Manrope", sans-serif;
+    font-size: 2rem;
+    font-weight: 800;
+    line-height: 1.25;
+}
+
+.auth-description {
+    margin-bottom: 2rem;
+    color: var(--text-light);
+    font-size: 0.95rem;
+    line-height: 1.7;
+}
+
+/* FORM */
+
+.form-group {
+    margin-bottom: 1.25rem;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 0.55rem;
+    color: var(--heading);
+    font-size: 0.9rem;
+    font-weight: 700;
+}
+
+.input-wrapper {
+    position: relative;
+}
+
+.input-wrapper i {
+    position: absolute;
+    top: 50%;
+    left: 1rem;
+    color: var(--text-light);
+    font-size: 1.15rem;
+    transform: translateY(-50%);
+}
+
+.input-wrapper input {
+    width: 100%;
+    min-height: 3.35rem;
+    padding: 0.85rem 1rem 0.85rem 2.9rem;
+    color: var(--heading);
+    background: var(--white);
+    border: 0.0625rem solid var(--border);
+    border-radius: 0.7rem;
+    outline: none;
+    transition: border-color 0.25s ease, box-shadow 0.25s ease;
+}
+
+.input-wrapper input::placeholder {
+    color: #9aa8b5;
+}
+
+.input-wrapper input:focus {
+    border-color: var(--primary);
+    box-shadow: 0 0 0 0.2rem rgba(18, 100, 163, 0.1);
+}
+
+.form-options {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1rem;
+    margin: 0.25rem 0 1.5rem;
+    font-size: 0.83rem;
+}
+
+.remember-option {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    cursor: pointer;
+}
+
+.remember-option input {
+    width: 1rem;
+    height: 1rem;
+    accent-color: var(--primary);
+}
+
+.text-link {
+    color: var(--primary);
+    font-weight: 700;
+}
+
+.text-link:hover {
+    color: var(--primary-dark);
+    text-decoration: underline;
+}
+
+/* BUTTON */
+
+.auth-button {
+    width: 100%;
+    min-height: 3.4rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.65rem;
+    padding: 0.9rem 1.2rem;
+    color: var(--white);
+    background: var(--primary);
+    border: none;
+    border-radius: 0.7rem;
+    font-weight: 700;
+    cursor: pointer;
+    transition: background 0.25s ease, transform 0.25s ease;
+}
+
+.auth-button:hover {
+    background: var(--primary-dark);
+    transform: translateY(-0.15rem);
+}
+
+.auth-button i {
+    font-size: 1.15rem;
+    transition: transform 0.25s ease;
+}
+
+.auth-button:hover i {
+    transform: translateX(0.2rem);
+}
+
+/* PATIENT SIGN-UP LINK */
+
+.auth-divider {
+    display: flex;
+    align-items: center;
+    gap: 0.8rem;
+    margin: 1.7rem 0 1.2rem;
+    color: var(--text-light);
+    font-size: 0.8rem;
+}
+
+.auth-divider::before,
+.auth-divider::after {
+    flex: 1;
+    height: 0.0625rem;
+    content: "";
+    background: var(--border);
+}
+
+.auth-switch {
+    text-align: center;
+    font-size: 0.88rem;
+    line-height: 1.7;
+}
+
+.auth-switch a {
+    margin-left: 0.25rem;
+    color: var(--primary);
+    font-weight: 700;
+}
+
+.auth-switch a:hover {
+    text-decoration: underline;
+}
+
+.auth-note {
+    display: flex;
+    align-items: flex-start;
+    gap: 0.55rem;
+    margin-top: 1.6rem;
+    padding: 0.9rem;
+    color: var(--text-light);
+    background: var(--background);
+    border-radius: 0.7rem;
+    font-size: 0.78rem;
+    line-height: 1.6;
+}
+
+.auth-note i {
+    color: var(--teal);
+    font-size: 1.1rem;
+}
+
+/* DOCTOR ACCESS NOTICE */
+
+.doctor-access-note {
+    display: flex;
+    align-items: flex-start;
+    gap: 0.75rem;
+    margin-top: 1.5rem;
+    padding: 1rem;
+    color: var(--text);
+    background: #f0f8fb;
+    border: 0.0625rem solid #dcecf4;
+    border-radius: 0.75rem;
+}
+
+.doctor-access-note > i {
+    margin-top: 0.1rem;
+    color: var(--primary);
+    font-size: 1.25rem;
+}
+
+.doctor-access-note strong {
+    display: block;
+    margin-bottom: 0.3rem;
+    color: var(--heading);
+    font-size: 0.85rem;
+}
+
+.doctor-access-note p {
+    font-size: 0.8rem;
+    line-height: 1.6;
+}
+
+.doctor-switch {
+    margin-top: 1.4rem;
+}
+
+/* FOOTER */
+
+.auth-footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1rem;
+    padding: 1.5rem 6%;
+    color: var(--text-light);
+    border-top: 0.0625rem solid var(--border);
+    font-size: 0.8rem;
+}
+
+.auth-footer a {
+    color: var(--primary);
+    font-weight: 700;
+}
+
+.auth-footer a:hover {
+    text-decoration: underline;
+}
+
+/* ANIMATION */
+
+@keyframes auth-appear {
+    from {
+        opacity: 0;
+        transform: translateY(1rem);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* RESPONSIVE DESIGN */
+
+@media (max-width: 500px) {
+    .auth-header {
+        align-items: flex-start;
+        padding: 1.2rem 5%;
+    }
+
+    .logo {
+        font-size: 1.05rem;
+    }
+
+    .logo-icon {
+        width: 2.3rem;
+        height: 2.3rem;
+        font-size: 1.3rem;
+    }
+
+    .back-link {
+        max-width: 9rem;
+        font-size: 0.78rem;
+        line-height: 1.5;
+    }
+
+    .auth-main {
+        align-items: flex-start;
+        padding: 2rem 1rem;
+    }
+
+    .auth-card {
+        padding: 1.6rem 1.25rem;
+        border-radius: 1rem;
+    }
+
+    .auth-card h1 {
+        font-size: 1.7rem;
+    }
+
+    .form-options {
+        align-items: flex-start;
+        font-size: 0.78rem;
+    }
+
+    .auth-footer {
+        flex-direction: column;
+        text-align: center;
+    }
+}
+

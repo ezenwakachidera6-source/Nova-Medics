@@ -1,0 +1,728 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Dashboard</title>
+    <link rel="stylesheet" href="/css/admindashboard.css">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.6.0/fonts/remixicon.css" rel="stylesheet">
+</head>
+
+<body>
+
+
+    <div class="admin-layout">
+
+
+        <!-- SIDEBAR -->
+        <aside class="sidebar">
+
+            <div class="sidebar-top">
+
+                <!-- LOGO -->
+                <a href="admin-dashboard.html" class="admin-logo">
+
+                    <span class="logo-icon">
+                        <i class="ri-heart-pulse-line"></i>
+                    </span>
+
+                    <span>Nova Medics</span>
+
+                </a>
+
+
+                <!-- ADMIN PROFILE -->
+                <div class="admin-profile">
+
+                    <div class="profile-image">
+                        <i class="ri-shield-user-line"></i>
+                    </div>
+
+                    <div>
+                        <strong>Hospital Admin</strong>
+                        <span>Administrator</span>
+                    </div>
+
+                </div>
+
+
+                <!-- NAVIGATION -->
+                <nav class="sidebar-nav">
+
+                    <p class="nav-title">Workspace</p>
+
+                    <a href="#" class="nav-link active">
+                        <i class="ri-dashboard-line"></i>
+                        <span>Overview</span>
+                    </a>
+
+                    <a href="#" class="nav-link">
+                        <i class="ri-user-heart-line"></i>
+                        <span>Patients</span>
+                    </a>
+
+                    <a href="#" class="nav-link">
+                        <i class="ri-stethoscope-line"></i>
+                        <span>Doctors</span>
+                    </a>
+
+                    <a href="#" class="nav-link">
+                        <i class="ri-calendar-check-line"></i>
+                        <span>Appointments</span>
+                    </a>
+
+                    <a href="#" class="nav-link">
+                        <i class="ri-building-4-line"></i>
+                        <span>Departments</span>
+                    </a>
+
+                    <a href="#doctor-accounts" class="nav-link request-link">
+                        <i class="ri-user-settings-line"></i>
+                        <span>Doctor Accounts</span>
+                    </a>
+
+
+                    <p class="nav-title">Account</p>
+
+                    <a href="#" class="nav-link">
+                        <i class="ri-settings-3-line"></i>
+                        <span>Settings</span>
+                    </a>
+
+                    <a href="index.html" class="nav-link">
+                        <i class="ri-global-line"></i>
+                        <span>View Website</span>
+                    </a>
+
+                </nav>
+
+            </div>
+
+
+            <!-- SIDEBAR BOTTOM -->
+            <div class="sidebar-bottom">
+
+                <a href="admin-login.html" class="sign-out">
+                    <i class="ri-logout-box-r-line"></i>
+                    <span>Sign Out</span>
+                </a>
+
+            </div>
+
+        </aside>
+
+
+
+        <!-- MAIN CONTENT -->
+        <main class="admin-main">
+
+
+            <!-- TOPBAR -->
+            <header class="topbar">
+
+                <div>
+                    <p>Admin Dashboard</p>
+                    <h1>Hospital Overview</h1>
+                </div>
+
+                <div class="topbar-actions">
+
+                    <button class="notification-button">
+                        <i class="ri-notification-3-line"></i>
+                        <span></span>
+                    </button>
+
+                    <div class="topbar-profile">
+
+                        <div class="profile-image">
+                            <i class="ri-shield-user-line"></i>
+                        </div>
+
+                        <div>
+                            <strong>Hospital Admin</strong>
+                            <span>Administrator</span>
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </header>
+
+
+
+            <!-- PAGE CONTENT -->
+            <div class="dashboard-content">
+
+
+                <!-- WELCOME BANNER -->
+                <section class="welcome-banner">
+
+                    <div>
+
+                        <span>Welcome back, Admin</span>
+
+                        <h2>
+                            Here's what's happening at Nova Medics today.
+                        </h2>
+
+                        <p>
+                            Manage your hospital operations,
+                            appointments, doctors and patients from one place.
+                        </p>
+
+                    </div>
+
+                    <i class="ri-hospital-line"></i>
+
+                </section>
+
+
+
+                <!-- STAT CARDS -->
+                <section class="stats-grid">
+
+
+                    <div class="stat-card">
+
+                        <div class="stat-icon blue">
+                            <i class="ri-user-heart-line"></i>
+                        </div>
+
+                        <div>
+                            <span>Total Patients</span>
+                            <strong>1,284</strong>
+                            <small>
+                                <i class="ri-arrow-up-line"></i>
+                                8.4% this month
+                            </small>
+                        </div>
+
+                    </div>
+
+
+                    <div class="stat-card">
+
+                        <div class="stat-icon teal">
+                            <i class="ri-stethoscope-line"></i>
+                        </div>
+
+                        <div>
+                            <span>Active Doctors</span>
+                            <strong>46</strong>
+                            <small>
+                                <i class="ri-arrow-up-line"></i>
+                                3 new this month
+                            </small>
+                        </div>
+
+                    </div>
+
+
+                    <div class="stat-card">
+
+                        <div class="stat-icon purple">
+                            <i class="ri-calendar-check-line"></i>
+                        </div>
+
+                        <div>
+                            <span>Today's Appointments</span>
+                            <strong>72</strong>
+                            <small>
+                                <i class="ri-time-line"></i>
+                                18 remaining
+                            </small>
+                        </div>
+
+                    </div>
+
+
+                    <div class="stat-card">
+                        <div class="stat-icon orange">
+                            <i class="ri-user-settings-line"></i>
+                        </div>
+                        <div>
+                            <span>Doctor Accounts</span>
+                            <strong>46</strong>
+                            <small>
+                                <i class="ri-shield-check-line"></i>
+                                Admin-managed accounts
+                            </small>
+                        </div>
+                    </div>
+
+                </section>
+
+
+
+                <!-- DASHBOARD GRID -->
+                <section class="dashboard-grid">
+
+
+                    <!-- TODAY'S SCHEDULE -->
+                    <div class="dashboard-panel schedule-panel">
+
+                        <div class="panel-heading">
+
+                            <div>
+                                <span>Appointments</span>
+                                <h3>Today's Schedule</h3>
+                            </div>
+
+                            <a href="#">
+                                View All
+                                <i class="ri-arrow-right-line"></i>
+                            </a>
+
+                        </div>
+
+
+                        <div class="appointment-list">
+
+
+                            <div class="appointment-row">
+
+                                <div class="appointment-time">
+                                    <strong>09:00</strong>
+                                    <span>AM</span>
+                                </div>
+
+                                <div class="appointment-info">
+
+                                    <div class="patient-avatar">
+                                        <i class="ri-user-line"></i>
+                                    </div>
+
+                                    <div>
+                                        <strong>Amara Okafor</strong>
+                                        <span>Cardiology</span>
+                                    </div>
+
+                                </div>
+
+                                <span class="status confirmed">
+                                    Confirmed
+                                </span>
+
+                            </div>
+
+
+                            <div class="appointment-row">
+
+                                <div class="appointment-time">
+                                    <strong>10:30</strong>
+                                    <span>AM</span>
+                                </div>
+
+                                <div class="appointment-info">
+
+                                    <div class="patient-avatar">
+                                        <i class="ri-user-line"></i>
+                                    </div>
+
+                                    <div>
+                                        <strong>Daniel Obi</strong>
+                                        <span>General Medicine</span>
+                                    </div>
+
+                                </div>
+
+                                <span class="status pending">
+                                    Pending
+                                </span>
+
+                            </div>
+
+
+                            <div class="appointment-row">
+
+                                <div class="appointment-time">
+                                    <strong>12:00</strong>
+                                    <span>PM</span>
+                                </div>
+
+                                <div class="appointment-info">
+
+                                    <div class="patient-avatar">
+                                        <i class="ri-user-line"></i>
+                                    </div>
+
+                                    <div>
+                                        <strong>Sarah Williams</strong>
+                                        <span>Pediatrics</span>
+                                    </div>
+
+                                </div>
+
+                                <span class="status confirmed">
+                                    Confirmed
+                                </span>
+
+                            </div>
+
+
+                            <div class="appointment-row">
+
+                                <div class="appointment-time">
+                                    <strong>02:30</strong>
+                                    <span>PM</span>
+                                </div>
+
+                                <div class="appointment-info">
+
+                                    <div class="patient-avatar">
+                                        <i class="ri-user-line"></i>
+                                    </div>
+
+                                    <div>
+                                        <strong>Michael Eze</strong>
+                                        <span>Orthopedics</span>
+                                    </div>
+
+                                </div>
+
+                                <span class="status pending">
+                                    Pending
+                                </span>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+
+                    <!-- DOCTOR ACCOUNT MANAGEMENT -->
+                    <div class="dashboard-panel requests-panel" id="doctor-accounts">
+
+                        <div class="panel-heading">
+
+                            <div>
+                                <span>Staff Management</span>
+                                <h3>Doctor Account Management</h3>
+                            </div>
+
+                            <span class="request-count">
+                                Admin Controlled
+                            </span>
+
+                        </div>
+
+
+                        <div class="request-list">
+
+                            <div class="request-item">
+
+                                <div class="request-avatar">
+                                    <i class="ri-user-add-line"></i>
+                                </div>
+
+                                <div class="request-info">
+
+                                    <strong>Create Doctor Account</strong>
+
+                                    <span>
+                                        Register an approved doctor and assign
+                                        hospital login credentials.
+                                    </span>
+
+                                </div>
+
+                                <div class="request-actions">
+
+                                    <a href="create-doctor-account.html" title="Create Doctor Account"
+                                        aria-label="Create Doctor Account">
+                                        <i class="ri-add-line"></i>
+                                    </a>
+
+                                </div>
+
+                            </div>
+
+
+                            <div class="request-item">
+
+                                <div class="request-avatar">
+                                    <i class="ri-shield-user-line"></i>
+                                </div>
+
+                                <div class="request-info">
+
+                                    <strong>Manage Doctor Accounts</strong>
+
+                                    <span>
+                                        View staff accounts and manage their access.
+                                    </span>
+
+                                </div>
+
+                                <div class="request-actions">
+
+                                    <a href="#doctors" title="View Doctor Accounts" aria-label="View Doctor Accounts">
+                                        <i class="ri-arrow-right-line"></i>
+                                    </a>
+
+                                </div>
+
+                            </div>
+
+
+                            <div class="request-item">
+
+                                <div class="request-avatar">
+                                    <i class="ri-lock-password-line"></i>
+                                </div>
+
+                                <div class="request-info">
+
+                                    <strong>Login Credentials</strong>
+
+                                    <span>
+                                        Assign hospital email addresses and temporary
+                                        passwords to approved doctors.
+                                    </span>
+
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+
+
+                    <!-- RECENT ACTIVITY -->
+                    <div class="dashboard-panel">
+
+                        <div class="panel-heading">
+
+                            <div>
+                                <span>System Updates</span>
+                                <h3>Recent Activity</h3>
+                            </div>
+
+                            <a href="#">
+                                View All
+                                <i class="ri-arrow-right-line"></i>
+                            </a>
+
+                        </div>
+
+
+                        <div class="activity-list">
+
+
+                            <div class="activity-item">
+
+                                <div class="activity-icon">
+                                    <i class="ri-user-add-line"></i>
+                                </div>
+
+                                <div>
+                                    <strong>
+                                        New patient registered
+                                    </strong>
+
+                                    <span>
+                                        Chinedu Okafor created an account.
+                                    </span>
+
+                                    <small>
+                                        15 minutes ago
+                                    </small>
+                                </div>
+
+                            </div>
+
+
+                            <div class="activity-item">
+
+                                <div class="activity-icon">
+                                    <i class="ri-calendar-check-line"></i>
+                                </div>
+
+                                <div>
+                                    <strong>
+                                        Appointment booked
+                                    </strong>
+
+                                    <span>
+                                        A new cardiology appointment was requested.
+                                    </span>
+
+                                    <small>
+                                        32 minutes ago
+                                    </small>
+                                </div>
+
+                            </div>
+
+
+                            <div class="activity-item">
+
+                                <div class="activity-icon">
+                                    <i class="ri-stethoscope-line"></i>
+                                </div>
+
+                                <div>
+                                    <strong>
+                                        Doctor account updated
+                                    </strong>
+
+                                    <span>
+                                        Dr. Sarah James updated her profile.
+                                    </span>
+
+                                    <small>
+                                        1 hour ago
+                                    </small>
+                                </div>
+
+                            </div>
+
+
+                            <div class="activity-item">
+
+                                <div class="activity-icon">
+                                    <i class="ri-building-4-line"></i>
+                                </div>
+
+                                <div>
+                                    <strong>
+                                        Department updated
+                                    </strong>
+
+                                    <span>
+                                        Cardiology department information was updated.
+                                    </span>
+
+                                    <small>
+                                        2 hours ago
+                                    </small>
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+
+
+                    <!-- DEPARTMENTS -->
+                    <div class="dashboard-panel">
+
+                        <div class="panel-heading">
+
+                            <div>
+                                <span>Hospital Management</span>
+                                <h3>Departments</h3>
+                            </div>
+
+                            <a href="#">
+                                Manage
+                                <i class="ri-arrow-right-line"></i>
+                            </a>
+
+                        </div>
+
+
+                        <div class="department-list">
+
+
+                            <div class="department-item">
+
+                                <div class="department-icon">
+                                    <i class="ri-heart-pulse-line"></i>
+                                </div>
+
+                                <div>
+                                    <strong>Cardiology</strong>
+                                    <span>8 Doctors</span>
+                                </div>
+
+                                <strong>245</strong>
+
+                            </div>
+
+
+                            <div class="department-item">
+
+                                <div class="department-icon">
+                                    <i class="ri-mental-health-line"></i>
+                                </div>
+
+                                <div>
+                                    <strong>Neurology</strong>
+                                    <span>6 Doctors</span>
+                                </div>
+
+                                <strong>183</strong>
+
+                            </div>
+
+
+                            <div class="department-item">
+
+                                <div class="department-icon">
+                                    <i class="ri-parent-line"></i>
+                                </div>
+
+                                <div>
+                                    <strong>Pediatrics</strong>
+                                    <span>7 Doctors</span>
+                                </div>
+
+                                <strong>210</strong>
+
+                            </div>
+
+
+                            <div class="department-item">
+
+                                <div class="department-icon">
+                                    <i class="ri-women-line"></i>
+                                </div>
+
+                                <div>
+                                    <strong>Women's Health</strong>
+                                    <span>9 Doctors</span>
+                                </div>
+
+                                <strong>198</strong>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </section>
+
+            </div>
+
+
+
+            <!-- FOOTER -->
+            <footer class="admin-footer">
+
+                <p>
+                    © 2026 Nova Medics. All rights reserved.
+                </p>
+
+                <span>
+                    Hospital Administration Portal
+                </span>
+
+            </footer>
+
+        </main>
+
+    </div>
+
+
+</body>
+
+</html>

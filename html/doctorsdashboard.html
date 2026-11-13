@@ -1,0 +1,782 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Doctors Dashboard</title>
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.6.0/fonts/remixicon.css" rel="stylesheet">
+    <link rel="stylesheet" href="/css/doctorsdashboard.css">
+</head>
+<body>
+
+    <div class="dashboard-layout">
+
+        <!-- SIDEBAR -->
+        <aside class="sidebar">
+
+            <a href="/html/landingpage.html" class="logo">
+                <span class="logo-icon">
+                    <i class="ri-heart-pulse-line"></i>
+                </span>
+
+                <span>Nova <strong>Medics</strong></span>
+            </a>
+
+            <div class="doctor-profile">
+                <div class="doctor-avatar">
+                    <img src="/images/pexels-konrads-photo-32160037.jpg" alt="">
+                </div>
+
+                <div class="doctor-profile-info">
+                    <h3>Dr. Habib Ismael</h3>
+                    <p>General Practitioner</p>
+                </div>
+            </div>
+
+            <p class="sidebar-label">WORKSPACE</p>
+
+            <nav class="sidebar-nav">
+                <a href="#overview" class="nav-link active">
+                    <i class="ri-dashboard-line"></i>
+                    <span>Overview</span>
+                </a>
+
+                <a href="#appointments" class="nav-link">
+                    <i class="ri-calendar-check-line"></i>
+                    <span>Appointments</span>
+                    <span class="nav-count">5</span>
+                </a>
+
+                <a href="#patients" class="nav-link">
+                    <i class="ri-user-heart-line"></i>
+                    <span>My Patients</span>
+                </a>
+
+                <a href="#schedule" class="nav-link">
+                    <i class="ri-calendar-schedule-line"></i>
+                    <span>My Schedule</span>
+                </a>
+
+                <a href="#messages" class="nav-link">
+                    <i class="ri-message-3-line"></i>
+                    <span>Messages</span>
+                    <span class="message-dot"></span>
+                </a>
+            </nav>
+
+            <p class="sidebar-label account-label">ACCOUNT</p>
+
+            <nav class="sidebar-nav">
+                <a href="#profile" class="nav-link">
+                    <i class="ri-user-settings-line"></i>
+                    <span>My Profile</span>
+                </a>
+
+                <a href="#settings" class="nav-link">
+                    <i class="ri-settings-3-line"></i>
+                    <span>Settings</span>
+                </a>
+            </nav>
+
+            <div class="sidebar-bottom">
+                <div class="help-card">
+                    <div class="help-icon">
+                        <i class="ri-customer-service-2-line"></i>
+                    </div>
+
+                    <h4>Need assistance?</h4>
+                    <p>Contact the hospital support team.</p>
+
+                    <a href="mailto:admin@novamedics.com">
+                        Contact Support
+                        <i class="ri-arrow-right-line"></i>
+                    </a>
+                </div>
+
+                <a href="doctor-access.html" class="logout-link">
+                    <i class="ri-logout-box-r-line"></i>
+                    <span>Sign Out</span>
+                </a>
+            </div>
+
+        </aside>
+
+        <!-- MAIN CONTENT -->
+        <main class="dashboard-main" id="overview">
+
+            <!-- TOP BAR -->
+            <header class="dashboard-topbar">
+
+                <div class="topbar-heading">
+                    <p class="welcome-text">DOCTOR PORTAL</p>
+                    <h1>Good day, Dr. Habib</h1>
+                    <p class="topbar-description">
+                        Here is your clinical overview for today.
+                    </p>
+                </div>
+
+                <div class="topbar-actions">
+
+                    <button class="icon-button notification-button" type="button" aria-label="Notifications">
+                        <i class="ri-notification-3-line"></i>
+                        <span class="notification-dot"></span>
+                    </button>
+
+                    <div class="topbar-doctor">
+                        <div class="topbar-avatar">
+                            <img src="/images/pexels-konrads-photo-32160037.jpg" alt="">
+                        </div>
+
+                        <div>
+                            <h3>Dr. Habib Ismael</h3>
+                            <p>General Practitioner</p>
+                        </div>
+
+                        <i class="ri-arrow-down-s-line dropdown-icon"></i>
+                    </div>
+
+                </div>
+
+            </header>
+
+            <!-- WELCOME BANNER -->
+            <section class="welcome-banner">
+                <div class="welcome-banner-content">
+                    <span class="banner-tag">
+                        <i class="ri-sun-line"></i>
+                        YOUR DAILY OVERVIEW
+                    </span>
+
+                    <h2>Ready for a productive day?</h2>
+
+                    <p>
+                        Review your appointments, check your patient list,
+                        and stay updated with your schedule.
+                    </p>
+
+                    <a href="#appointments" class="banner-button">
+                        View Appointments
+                        <i class="ri-arrow-right-line"></i>
+                    </a>
+                </div>
+
+                <div class="banner-illustration">
+                    <div class="banner-circle"></div>
+
+                    <div class="banner-icon">
+                        <i class="ri-stethoscope-line"></i>
+                    </div>
+
+                    <div class="banner-small-icon">
+                        <i class="ri-heart-pulse-line"></i>
+                    </div>
+                </div>
+            </section>
+
+            <!-- SUMMARY CARDS -->
+            <section class="summary-section">
+
+                <div class="section-heading">
+                    <div>
+                        <h2>Today's overview</h2>
+                        <p>A quick look at your clinical activity.</p>
+                    </div>
+
+                    <span class="date-label">
+                        <i class="ri-calendar-line"></i>
+                        Today
+                    </span>
+                </div>
+
+                <div class="summary-grid">
+
+                    <div class="summary-card">
+                        <div class="summary-card-top">
+                            <div class="summary-icon blue-icon">
+                                <i class="ri-calendar-check-line"></i>
+                            </div>
+
+                            <span class="summary-status">Today</span>
+                        </div>
+
+                        <p class="summary-title">Appointments</p>
+                        <h3>12</h3>
+                        <p class="summary-note">
+                            <span>5 remaining</span> on your schedule
+                        </p>
+                    </div>
+
+                    <div class="summary-card">
+                        <div class="summary-card-top">
+                            <div class="summary-icon teal-icon">
+                                <i class="ri-user-heart-line"></i>
+                            </div>
+
+                            <span class="summary-status">Total</span>
+                        </div>
+
+                        <p class="summary-title">My Patients</p>
+                        <h3>148</h3>
+                        <p class="summary-note">
+                            Patients under your care
+                        </p>
+                    </div>
+
+                    <div class="summary-card">
+                        <div class="summary-card-top">
+                            <div class="summary-icon purple-icon">
+                                <i class="ri-time-line"></i>
+                            </div>
+
+                            <span class="summary-status">Pending</span>
+                        </div>
+
+                        <p class="summary-title">Appointment Requests</p>
+                        <h3>5</h3>
+                        <p class="summary-note">
+                            Requests awaiting review
+                        </p>
+                    </div>
+
+                    <div class="summary-card">
+                        <div class="summary-card-top">
+                            <div class="summary-icon orange-icon">
+                                <i class="ri-chat-3-line"></i>
+                            </div>
+
+                            <span class="summary-status">Unread</span>
+                        </div>
+
+                        <p class="summary-title">Messages</p>
+                        <h3>3</h3>
+                        <p class="summary-note">
+                            Patient messages to review
+                        </p>
+                    </div>
+
+                </div>
+            </section>
+
+            <!-- APPOINTMENTS AND SCHEDULE -->
+            <section class="dashboard-columns" id="appointments">
+
+                <div class="content-panel appointments-panel">
+
+                    <div class="panel-heading">
+                        <div>
+                            <h2>Upcoming appointments</h2>
+                            <p>Your next scheduled consultations.</p>
+                        </div>
+
+                        <a href="#appointments" class="view-link">
+                            View all
+                            <i class="ri-arrow-right-line"></i>
+                        </a>
+                    </div>
+
+                    <div class="appointment-list">
+
+                        <div class="appointment-item">
+                            <div class="appointment-time">
+                                <strong>09:00</strong>
+                                <span>AM</span>
+                            </div>
+
+                            <div class="appointment-patient">
+                                <div class="patient-avatar avatar-blue"><img src="/images/kelvin.jpeg" alt=""></div>
+
+                                <div>
+                                    <h3>kelvin Chidera</h3>
+                                    <p>General Consultation</p>
+                                </div>
+                            </div>
+
+                            <span class="status-badge status-confirmed">
+                                Confirmed
+                            </span>
+
+                            <a href="#patients" class="appointment-arrow" aria-label="View Amara Michael">
+                                <i class="ri-arrow-right-s-line"></i>
+                            </a>
+                        </div>
+
+                        <div class="appointment-item">
+                            <div class="appointment-time">
+                                <strong>10:30</strong>
+                                <span>AM</span>
+                            </div>
+
+                            <div class="appointment-patient">
+                                <div class="patient-avatar avatar-teal"><img src="/images/pexels-khalil-atif-khan-3701376-7515590.jpg" alt=""></div>
+
+                                <div>
+                                    <h3>Daniel Okafor</h3>
+                                    <p>Follow-up Consultation</p>
+                                </div>
+                            </div>
+
+                            <span class="status-badge status-confirmed">
+                                Confirmed
+                            </span>
+
+                            <a href="#patients" class="appointment-arrow" aria-label="View Daniel Okafor">
+                                <i class="ri-arrow-right-s-line"></i>
+                            </a>
+                        </div>
+
+                        <div class="appointment-item">
+                            <div class="appointment-time">
+                                <strong>11:45</strong>
+                                <span>AM</span>
+                            </div>
+
+                            <div class="appointment-patient">
+                                <div class="patient-avatar avatar-purple"><img src="/images/pexels-zeynep-sude-emek-193601188-20267234.jpg" alt=""></div>
+
+                                <div>
+                                    <h3>Chiamaka James</h3>
+                                    <p>General Consultation</p>
+                                </div>
+                            </div>
+
+                            <span class="status-badge status-pending">
+                                Pending
+                            </span>
+
+                            <a href="#patients" class="appointment-arrow" aria-label="View Chiamaka James">
+                                <i class="ri-arrow-right-s-line"></i>
+                            </a>
+                        </div>
+
+                        <div class="appointment-item">
+                            <div class="appointment-time">
+                                <strong>01:00</strong>
+                                <span>PM</span>
+                            </div>
+
+                            <div class="appointment-patient">
+                                <div class="patient-avatar avatar-orange"><img src="/images/pexels-khalil-atif-khan-3701376-7515590.jpg" alt=""></div>
+
+                                <div>
+                                    <h3>Emeka Obi</h3>
+                                    <p>Routine Check-up</p>
+                                </div>
+                            </div>
+
+                            <span class="status-badge status-confirmed">
+                                Confirmed
+                            </span>
+
+                            <a href="#patients" class="appointment-arrow" aria-label="View Emeka Obi">
+                                <i class="ri-arrow-right-s-line"></i>
+                            </a>
+                        </div>
+
+                    </div>
+                </div>
+
+                <!-- DAILY SCHEDULE -->
+                <div class="content-panel schedule-panel" id="schedule">
+
+                    <div class="panel-heading">
+                        <div>
+                            <h2>My schedule</h2>
+                            <p>Your day at a glance.</p>
+                        </div>
+
+                        <a href="#schedule" class="small-icon-link" aria-label="View schedule">
+                            <i class="ri-calendar-line"></i>
+                        </a>
+                    </div>
+
+                    <div class="schedule-date">
+                        <div>
+                            <span>MON</span>
+                            <strong>28</strong>
+                        </div>
+
+                        <div>
+                            <span>TUE</span>
+                            <strong>29</strong>
+                        </div>
+
+                        <div class="selected-date">
+                            <span>WED</span>
+                            <strong>30</strong>
+                        </div>
+
+                        <div>
+                            <span>THU</span>
+                            <strong>01</strong>
+                        </div>
+
+                        <div>
+                            <span>FRI</span>
+                            <strong>02</strong>
+                        </div>
+                    </div>
+
+                    <div class="schedule-timeline">
+
+                        <div class="timeline-item">
+                            <span class="timeline-time">09:00 AM</span>
+
+                            <div class="timeline-event">
+                                <span class="timeline-line blue-line"></span>
+                                <div>
+                                    <h3>General consultation</h3>
+                                    <p>Amara Michael</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="timeline-item">
+                            <span class="timeline-time">10:30 AM</span>
+
+                            <div class="timeline-event">
+                                <span class="timeline-line teal-line"></span>
+                                <div>
+                                    <h3>Follow-up consultation</h3>
+                                    <p>Daniel Okafor</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="timeline-item">
+                            <span class="timeline-time">12:30 PM</span>
+
+                            <div class="timeline-event break-event">
+                                <span class="timeline-line grey-line"></span>
+                                <div>
+                                    <h3>Break</h3>
+                                    <p>Lunch time</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="timeline-item">
+                            <span class="timeline-time">01:00 PM</span>
+
+                            <div class="timeline-event">
+                                <span class="timeline-line purple-line"></span>
+                                <div>
+                                    <h3>Routine check-up</h3>
+                                    <p>Emeka Obi</p>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </section>
+
+            <!-- PATIENTS AND QUICK ACTIONS -->
+            <section class="dashboard-columns lower-columns">
+
+                <div class="content-panel patients-panel" id="patients">
+
+                    <div class="panel-heading">
+                        <div>
+                            <h2>Recent patients</h2>
+                            <p>Patients you recently attended to.</p>
+                        </div>
+
+                        <a href="#patients" class="view-link">
+                            View all
+                            <i class="ri-arrow-right-line"></i>
+                        </a>
+                    </div>
+
+                    <div class="patient-table-wrapper">
+                        <table class="patient-table">
+                            <thead>
+                                <tr>
+                                    <th>Patient</th>
+                                    <th>Visit type</th>
+                                    <th>Last visit</th>
+                                    <th>Status</th>
+                                </tr>
+                            </thead>
+
+                            <tbody>
+                                <tr>
+                                    <td>
+                                        <div class="table-patient">
+                                            <div class="patient-avatar avatar-blue"><img src="/images/chy.jpeg" alt=""></div>
+                                            <div>
+                                                <strong>Chy Cynthia</strong>
+                                                <span>NM-00124</span>
+                                            </div>
+                                        </div>
+                                    </td>
+
+                                    <td>Consultation</td>
+                                    <td>Sep 28, 2026</td>
+
+                                    <td>
+                                        <span class="table-status status-completed">
+                                            Completed
+                                        </span>
+                                    </td>
+                                </tr>
+
+                                <tr>
+                                    <td>
+                                        <div class="table-patient">
+                                            <div class="patient-avatar avatar-teal"><img src="/images/Marcel.jpeg" alt=""></div>
+                                            <div>
+                                                <strong>Marcel Dumbia</strong>
+                                                <span>NM-00125</span>
+                                            </div>
+                                        </div>
+                                    </td>
+
+                                    <td>Follow-up</td>
+                                    <td>Sep 27, 2026</td>
+
+                                    <td>
+                                        <span class="table-status status-completed">
+                                            Completed
+                                        </span>
+                                    </td>
+                                </tr>
+
+                                <tr>
+                                    <td>
+                                        <div class="table-patient">
+                                            <div class="patient-avatar avatar-purple"><img src="/images/Princess.jpeg" alt=""></div>
+                                            <div>
+                                                <strong>Princess Miracle</strong>
+                                                <span>NM-00126</span>
+                                            </div>
+                                        </div>
+                                    </td>
+
+                                    <td>Consultation</td>
+                                    <td>Sep 26, 2026</td>
+
+                                    <td>
+                                        <span class="table-status status-review">
+                                            Review
+                                        </span>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+
+                </div>
+
+                <!-- QUICK ACTIONS -->
+                <div class="content-panel quick-actions-panel">
+
+                    <div class="panel-heading">
+                        <div>
+                            <h2>Quick actions</h2>
+                            <p>Shortcuts to common tasks.</p>
+                        </div>
+                    </div>
+
+                    <div class="quick-actions">
+
+                        <a href="#appointments" class="quick-action">
+                            <span class="quick-action-icon blue-icon">
+                                <i class="ri-calendar-check-line"></i>
+                            </span>
+
+                            <span>
+                                <strong>Review appointments</strong>
+                                <small>Check today's bookings</small>
+                            </span>
+
+                            <i class="ri-arrow-right-s-line quick-arrow"></i>
+                        </a>
+
+                        <a href="#patients" class="quick-action">
+                            <span class="quick-action-icon teal-icon">
+                                <i class="ri-user-search-line"></i>
+                            </span>
+
+                            <span>
+                                <strong>View patient list</strong>
+                                <small>Browse your patients</small>
+                            </span>
+
+                            <i class="ri-arrow-right-s-line quick-arrow"></i>
+                        </a>
+
+                        <a href="#schedule" class="quick-action">
+                            <span class="quick-action-icon purple-icon">
+                                <i class="ri-calendar-event-line"></i>
+                            </span>
+
+                            <span>
+                                <strong>Check my schedule</strong>
+                                <small>Review your daily plan</small>
+                            </span>
+
+                            <i class="ri-arrow-right-s-line quick-arrow"></i>
+                        </a>
+
+                        <a href="#messages" class="quick-action">
+                            <span class="quick-action-icon orange-icon">
+                                <i class="ri-message-3-line"></i>
+                            </span>
+
+                            <span>
+                                <strong>Read messages</strong>
+                                <small>View patient enquiries</small>
+                            </span>
+
+                            <i class="ri-arrow-right-s-line quick-arrow"></i>
+                        </a>
+
+                    </div>
+                </div>
+
+            </section>
+
+            <!-- PROFILE AND MESSAGES -->
+            <section class="dashboard-columns bottom-columns">
+
+                <div class="content-panel profile-panel" id="profile">
+
+                    <div class="panel-heading">
+                        <div>
+                            <h2>My profile</h2>
+                            <p>Your professional information.</p>
+                        </div>
+
+                        <a href="#settings" class="small-icon-link" aria-label="Edit profile">
+                            <i class="ri-edit-line"></i>
+                        </a>
+                    </div>
+
+                    <div class="profile-details">
+                        <div class="profile-large-avatar">
+                            <img src="/images/pexels-konrads-photo-32160037.jpg" alt="">
+                        </div>
+
+                        <div class="profile-name">
+                            <h3>Dr. Habib Ismael</h3>
+                            <p>General Practitioner</p>
+                            <span class="verified-label">
+                                <i class="ri-checkbox-circle-fill"></i>
+                                Verified Doctor
+                            </span>
+                        </div>
+                    </div>
+
+                    <div class="profile-info-grid">
+                        <div>
+                            <span>Department</span>
+                            <strong>General Medicine</strong>
+                        </div>
+
+                        <div>
+                            <span>Doctor ID</span>
+                            <strong>NM-DR-001</strong>
+                        </div>
+
+                        <div>
+                            <span>Email</span>
+                            <strong>doctor@novamedics.com</strong>
+                        </div>
+
+                        <div>
+                            <span>Availability</span>
+                            <strong class="available-text">
+                                <span></span>
+                                Available today
+                            </strong>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="content-panel messages-panel" id="messages">
+
+                    <div class="panel-heading">
+                        <div>
+                            <h2>Recent messages</h2>
+                            <p>Latest patient messages.</p>
+                        </div>
+
+                        <a href="#messages" class="view-link">
+                            View all
+                            <i class="ri-arrow-right-line"></i>
+                        </a>
+                    </div>
+
+                    <div class="message-item">
+                        <div class="patient-avatar avatar-blue"><img src="/images/chy.jpeg" alt=""></div>
+
+                        <div class="message-content">
+                            <div class="message-top">
+                                <h3>Chy Cynthia</h3>
+                                <span>09:15 AM</span>
+                            </div>
+
+                            <p>Good morning, doctor. I wanted to ask about my appointment...</p>
+                        </div>
+
+                        <span class="unread-indicator"></span>
+                    </div>
+
+                    <div class="message-item">
+                        <div class="patient-avatar avatar-teal"><img src="/images/Marcel.jpeg" alt=""></div>
+
+                        <div class="message-content">
+                            <div class="message-top">
+                                <h3>Marcel Dumbia</h3>
+                                <span>Yesterday</span>
+                            </div>
+
+                            <p>Thank you for the consultation, doctor.</p>
+                        </div>
+                    </div>
+
+                    <div class="message-item">
+                        <div class="patient-avatar avatar-purple"><img src="/images/pexels-zeynep-sude-emek-193601188-20267234.jpg" alt=""></div>
+
+                        <div class="message-content">
+                            <div class="message-top">
+                                <h3>Chiamaka James</h3>
+                                <span>Sep 27</span>
+                            </div>
+
+                            <p>Please, can I confirm my next appointment date?</p>
+                        </div>
+
+                        <span class="unread-indicator"></span>
+                    </div>
+
+                </div>
+
+            </section>
+
+            <!-- FOOTER -->
+            <footer class="dashboard-footer">
+                <p>© 2026 Nova Medics. All rights reserved.</p>
+
+                <div class="footer-links">
+                    <a href="#overview">Help Centre</a>
+                    <a href="#overview">Privacy</a>
+                    <a href="#overview">Terms</a>
+                </div>
+            </footer>
+
+        </main>
+
+    </div>
+
+
+</body>
+</html>
+
+
+
+
+

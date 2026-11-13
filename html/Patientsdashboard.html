@@ -1,0 +1,424 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Patient Dashboard</title>
+    <link rel="stylesheet" href="/css/Patientsdashboard.css">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.9.0/fonts/remixicon.css" rel="stylesheet" />
+</head>
+<body>
+
+
+    <div class="dashboard-layout">
+
+        <!-- SIDEBAR -->
+        <aside class="sidebar">
+
+            <a href="/html/landingpage.html" class="logo">
+                <span class="logo-icon">
+                    <i class="ri-heart-pulse-line"></i>
+                </span>
+
+                <span>Nova <strong>Medics</strong></span>
+            </a>
+
+            <div class="sidebar-profile">
+                <div class="profile-avatar"><img src="/images/kelvin.jpeg" alt=""></div>
+
+                <div class="profile-info">
+                    <h3>Kelvin Chidera</h3>
+                    <p>Patient Account</p>
+                </div>
+            </div>
+
+            <nav class="sidebar-navigation">
+                <p class="navigation-title">MENU</p>
+
+                <a href="#overview" class="nav-link active">
+                    <i class="ri-dashboard-line"></i>
+                    <span>Overview</span>
+                </a>
+
+                <a href="#appointments" class="nav-link">
+                    <i class="ri-calendar-check-line"></i>
+                    <span>My Appointments</span>
+                </a>
+
+                <a href="#medical-records" class="nav-link">
+                    <i class="ri-file-list-3-line"></i>
+                    <span>Medical Records</span>
+                </a>
+
+                <a href="#payments" class="nav-link">
+                    <i class="ri-bank-card-line"></i>
+                    <span>Payments</span>
+                </a>
+
+                <a href="#profile" class="nav-link">
+                    <i class="ri-user-line"></i>
+                    <span>My Profile</span>
+                </a>
+            </nav>
+
+            <div class="sidebar-help">
+                <div class="help-icon">
+                    <i class="ri-question-line"></i>
+                </div>
+
+                <h3>Need help?</h3>
+                <p>Our support team is here to assist you.</p>
+
+                <a href="mailto:support@novamedics.com">
+                    Contact Support
+                    <i class="ri-arrow-right-line"></i>
+                </a>
+            </div>
+
+            <a href="#" class="logout-link">
+                <i class="ri-logout-box-r-line"></i>
+                <span>Sign Out</span>
+            </a>
+
+        </aside>
+
+
+        
+
+        <!-- MAIN DASHBOARD -->
+        <main class="dashboard-main" id="overview">
+
+            <!-- TOP HEADER -->
+            <header class="dashboard-header">
+
+                <div class="header-welcome">
+                    <p class="welcome-date">PATIENT DASHBOARD</p>
+                    <h1>Good day, Kelvin <span>👋</span></h1>
+                    <p>Here"s an overview of your healthcare activity.</p>
+                </div>
+
+                <div class="header-actions">
+                    <button class="notification-button" aria-label="Notifications">
+                        <i class="ri-notification-3-line"></i>
+                        <span class="notification-dot"></span>
+                    </button>
+
+                    <div class="header-profile">
+                        <div class="small-avatar"><img src="/images/kelvin.jpeg" alt=""></div>
+                        <div>
+                            <h3>Kelvin Chidera</h3>
+                            <p>Patient</p>
+                        </div>
+                    </div>
+                </div>
+
+            </header>
+
+
+            <!-- WELCOME BANNER -->
+            <section class="welcome-banner">
+
+                <div class="welcome-banner-content">
+                    <span class="banner-label">YOUR HEALTH, OUR PRIORITY</span>
+
+                    <h2>Take charge of your health today.</h2>
+
+                    <p>
+                        Manage your appointments, keep track of your care,
+                        and stay connected with your healthcare team.
+                    </p>
+
+                    <a href="/html/bookappointment.html" class="button button-light">
+                        Book an Appointment
+                        <i class="ri-arrow-right-line"></i>
+                    </a>
+                </div>
+
+                <div class="banner-decoration">
+                    <i class="ri-heart-pulse-line"></i>
+                </div>
+
+            </section>
+
+
+            <!-- OVERVIEW CARDS -->
+            <section class="overview-section">
+
+                <div class="section-heading">
+                    <div>
+                        <h2>Your Overview</h2>
+                        <p>A quick look at your healthcare activity.</p>
+                    </div>
+                </div>
+
+                <div class="overview-cards">
+
+                    <div class="overview-card">
+                        <div class="overview-card-top">
+                            <span class="overview-icon blue-icon">
+                                <i class="ri-calendar-check-line"></i>
+                            </span>
+
+                            <span class="card-status">Upcoming</span>
+                        </div>
+
+                        <h3>01</h3>
+                        <p>Upcoming Appointment</p>
+                    </div>
+
+                    <div class="overview-card">
+                        <div class="overview-card-top">
+                            <span class="overview-icon teal-icon">
+                                <i class="ri-file-list-3-line"></i>
+                            </span>
+                        </div>
+
+                        <h3>04</h3>
+                        <p>Medical Records</p>
+                    </div>
+
+                    <div class="overview-card">
+                        <div class="overview-card-top">
+                            <span class="overview-icon purple-icon">
+                                <i class="ri-stethoscope-line"></i>
+                            </span>
+                        </div>
+
+                        <h3>02</h3>
+                        <p>Completed Visits</p>
+                    </div>
+
+                    <div class="overview-card">
+                        <div class="overview-card-top">
+                            <span class="overview-icon orange-icon">
+                                <i class="ri-wallet-3-line"></i>
+                            </span>
+                        </div>
+
+                        <h3>₦0</h3>
+                        <p>Outstanding Balance</p>
+                    </div>
+
+                </div>
+
+            </section>
+
+
+            <!-- APPOINTMENT AND QUICK ACTIONS -->
+            <section class="dashboard-content-grid">
+
+                <div class="content-panel appointment-panel" id="appointments">
+
+                    <div class="panel-heading">
+                        <div>
+                            <h2>Upcoming Appointment</h2>
+                            <p>Your next scheduled visit.</p>
+                        </div>
+
+                        <a href="#appointments" class="view-link">View All</a>
+                    </div>
+
+                    <div class="appointment-details">
+
+                        <div class="appointment-date">
+                            <span>OCT</span>
+                            <strong>08</strong>
+                            <small>2026</small>
+                        </div>
+
+                        <div class="appointment-info">
+                            <span class="appointment-status">
+                                <span></span>
+                                Confirmed
+                            </span>
+
+                            <h3>General Consultation</h3>
+                            <p>
+                                <i class="ri-user-heart-line"></i>
+                                Dr. Sample Doctor
+                            </p>
+                            <p>
+                                <i class="ri-time-line"></i>
+                                10:30 AM
+                            </p>
+                            <p>
+                                <i class="ri-map-pin-line"></i>
+                                Nova Medics Clinic
+                            </p>
+                        </div>
+
+                    </div>
+
+                    <div class="appointment-actions">
+                        <a href="#appointments" class="button button-outline">
+                            View Details
+                        </a>
+
+                        <a href="#appointments" class="text-link">
+                            Reschedule
+                        </a>
+                    </div>
+
+                </div>
+
+
+                <div class="content-panel quick-actions-panel" id="book-appointment">
+
+                    <div class="panel-heading">
+                        <div>
+                            <h2>Quick Actions</h2>
+                            <p>What would you like to do?</p>
+                        </div>
+                    </div>
+
+                    <a href="/html/bookappointment.html" class="quick-action">
+                        <span class="quick-action-icon blue-icon">
+                            <i class="ri-calendar-event-line"></i>
+                        </span>
+
+                        <span>
+                            <strong>Book Appointment</strong>
+                            <small>Schedule a visit with a doctor</small>
+                        </span>
+
+                        <i class="ri-arrow-right-s-line"></i>
+                    </a>
+
+                    <a href="#medical-records" class="quick-action">
+                        <span class="quick-action-icon teal-icon">
+                            <i class="ri-file-text-line"></i>
+                        </span>
+
+                        <span>
+                            <strong>View Medical Records</strong>
+                            <small>Access your health information</small>
+                        </span>
+
+                        <i class="ri-arrow-right-s-line"></i>
+                    </a>
+
+                    <a href="#payments" class="quick-action">
+                        <span class="quick-action-icon orange-icon">
+                            <i class="ri-wallet-3-line"></i>
+                        </span>
+
+                        <span>
+                            <strong>Manage Payments</strong>
+                            <small>Review your payment information</small>
+                        </span>
+
+                        <i class="ri-arrow-right-s-line"></i>
+                    </a>
+
+                </div>
+
+            </section>
+
+
+            <!-- RECENT ACTIVITY -->
+            <section class="content-panel activity-panel" id="medical-records">
+
+                <div class="panel-heading">
+                    <div>
+                        <h2>Recent Activity</h2>
+                        <p>Your latest healthcare updates.</p>
+                    </div>
+
+                    <a href="#medical-records" class="view-link">View All</a>
+                </div>
+
+                <div class="activity-list">
+
+                    <div class="activity-item">
+                        <span class="activity-icon teal-icon">
+                            <i class="ri-calendar-check-line"></i>
+                        </span>
+
+                        <div class="activity-description">
+                            <h3>Appointment confirmed</h3>
+                            <p>Your general consultation has been scheduled.</p>
+                        </div>
+
+                        <span class="activity-time">Today</span>
+                    </div>
+
+                    <div class="activity-item">
+                        <span class="activity-icon blue-icon">
+                            <i class="ri-file-text-line"></i>
+                        </span>
+
+                        <div class="activity-description">
+                            <h3>Medical record updated</h3>
+                            <p>A new record has been added to your profile.</p>
+                        </div>
+
+                        <span class="activity-time">Sep 20</span>
+                    </div>
+
+                    <div class="activity-item">
+                        <span class="activity-icon purple-icon">
+                            <i class="ri-user-heart-line"></i>
+                        </span>
+
+                        <div class="activity-description">
+                            <h3>Profile created</h3>
+                            <p>Your patient profile is ready to use.</p>
+                        </div>
+
+                        <span class="activity-time">Sep 18</span>
+                    </div>
+
+                </div>
+
+            </section>
+
+
+            <!-- PROFILE AND PAYMENT PLACEHOLDERS -->
+            <section class="bottom-cards">
+
+                <div class="content-panel bottom-card" id="profile">
+                    <span class="bottom-card-icon blue-icon">
+                        <i class="ri-user-settings-line"></i>
+                    </span>
+
+                    <div>
+                        <h2>My Profile</h2>
+                        <p>Review your personal details and contact information.</p>
+                        <a href="#profile" class="view-link">Manage Profile</a>
+                    </div>
+                </div>
+
+                <div class="content-panel bottom-card" id="payments">
+                    <span class="bottom-card-icon teal-icon">
+                        <i class="ri-bank-card-line"></i>
+                    </span>
+
+                    <div>
+                        <h2>Payments</h2>
+                        <p>Review payment details and outstanding balances.</p>
+                        <a href="#payments" class="view-link">View Payments</a>
+                    </div>
+                </div>
+
+            </section>
+
+
+            <!-- FOOTER -->
+            <footer class="dashboard-footer">
+                <p>© 2026 Nova Medics. All rights reserved.</p>
+                <p>Care that puts you first.</p>
+            </footer>
+
+        </main>
+
+    </div>
+
+ 
+</body>
+</html>
+
+
+
+
+
+   
